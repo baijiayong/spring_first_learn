@@ -1,2 +1,3 @@
-com\baldurtech\SimpleSiteIntegrationTest.class
-com\baldurtech\WebDataFixture.class
+com\baldurtech\controller\SimpleSiteIntegrationTest.class
+com\baldurtech\controller\SiteIntegrationTest.class
+com\baldurtech\controller\WebDataFixture.class

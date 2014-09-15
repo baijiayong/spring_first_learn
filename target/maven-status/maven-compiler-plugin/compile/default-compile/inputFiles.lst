@@ -1,7 +1,11 @@
 d:\addressList\src\main\java\com\baldurtech\Application.java
-d:\addressList\src\main\java\com\baldurtech\SimpleSiteController.java
-d:\addressList\src\main\java\com\baldurtech\Contact.java
-d:\addressList\src\main\java\com\baldurtech\ContactController.java
-d:\addressList\src\main\java\com\baldurtech\CoreConfig.java
-d:\addressList\src\main\java\com\baldurtech\AllContactList.java
-d:\addressList\src\main\java\com\baldurtech\ContactService.java
+d:\addressList\src\main\java\com\baldurtech\core\ContactEventHandler.java
+d:\addressList\src\main\java\com\baldurtech\controller\SimpleSiteController.java
+d:\addressList\src\main\java\com\baldurtech\events\ReadEvent.java
+d:\addressList\src\main\java\com\baldurtech\controller\SiteController.java
+d:\addressList\src\main\java\com\baldurtech\persistence\ContactPersistenceService.java
+d:\addressList\src\main\java\com\baldurtech\core\ContactService.java
+d:\addressList\src\main\java\com\baldurtech\config\CoreConfig.java
+d:\addressList\src\main\java\com\baldurtech\core\Contact.java
+d:\addressList\src\main\java\com\baldurtech\events\RequestAllContactItemsEvent.java
+d:\addressList\src\main\java\com\baldurtech\controller\ContactController.java

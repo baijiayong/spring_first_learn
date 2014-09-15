@@ -1,2 +1,3 @@
-d:\addressList\src\test\java\com\baldurtech\SimpleSiteIntegrationTest.java
-d:\addressList\src\test\java\com\baldurtech\WebDataFixture.java
+d:\addressList\src\test\java\com\baldurtech\controller\SimpleSiteIntegrationTest.java
+d:\addressList\src\test\java\com\baldurtech\controller\WebDataFixture.java
+d:\addressList\src\test\java\com\baldurtech\controller\SiteIntegrationTest.java
