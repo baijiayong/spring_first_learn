@@ -1,5 +1,8 @@
-com\baldurtech\ContactController.class
-com\baldurtech\CoreConfig.class
 com\baldurtech\ContactService.class
 com\baldurtech\CoreConfig$1.class
+com\baldurtech\SimpleSiteController.class
+com\baldurtech\Contact.class
+com\baldurtech\ContactController.class
+com\baldurtech\CoreConfig.class
+com\baldurtech\AllContactList.class
 com\baldurtech\Application.class
