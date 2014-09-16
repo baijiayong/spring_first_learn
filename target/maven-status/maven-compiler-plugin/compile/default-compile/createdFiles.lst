@@ -10,7 +10,6 @@ com\baldurtech\repository\ContactMemoryRepository.class
 com\baldurtech\repository\ContactRepository.class
 com\baldurtech\core\ContactEventHandler.class
 com\baldurtech\events\ReadEvent.class
-com\baldurtech\controller\SimpleSiteController.class
 com\baldurtech\persistence\ContactPersistenceEventHandler.class
 com\baldurtech\Application.class
 com\baldurtech\persistence\ContactPersistenceService.class

@@ -9,6 +9,22 @@ public class ContactMemoryRepository implements ContactRepository {
  
     @Override
     public List<Contact> findAllContact() {
-        return new ArrayList<Contact>();
+        List<Contact> contacts = new ArrayList<Contact>();
+        Contact contact1 = new Contact();
+        contact1.setName("Xiao Bai");
+        contact1.setMobile("18233333333");
+        contact1.setVpmn("63333");
+        contact1.setEmail("xiaobai@gmail.com");
+        
+        Contact contact2 = new Contact();
+        contact2.setName("Shi Hang");
+        contact2.setMobile("18711111111");
+        contact2.setVpmn("65555");
+        contact2.setEmail("shihang@gmail.com");
+        
+        contacts.add(contact1);
+        contacts.add(contact2);
+       
+        return contacts;
     }
 }
