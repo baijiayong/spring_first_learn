@@ -1,13 +1,14 @@
 package com.baldurtech.controller;
 
 import com.baldurtech.core.Contact;
+import com.baldurtech.events.AllContactsListEvent;
 import com.baldurtech.events.RequestAllContactItemsEvent;
 
 import java.util.List;
 import java.util.ArrayList;
 
 public class WebDataFixture {
-    public static List<Contact> allContactList() {
+    public static AllContactsListEvent allContactList() {
         Contact contact1 = new Contact();
         contact1.setName("Xiao Bai");
         contact1.setMobile("18234444444");
@@ -24,6 +25,6 @@ public class WebDataFixture {
         contacts.add(contact1);
         contacts.add(contact2);
         
-        return contacts;
+        return new AllContactsListEvent(contacts);
     }
 }

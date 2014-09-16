@@ -4,9 +4,8 @@ import java.util.List;
 
 import com.baldurtech.core.Contact;
 import com.baldurtech.events.RequestAllContactItemsEvent;
+import com.baldurtech.events.AllContactsListEvent;
 
-public class ContactPersistenceService {
-    public List<Contact> requestAllContactItems(RequestAllContactItemsEvent requestAllContactItemsEvent) {
-        return null;
-    }
+public interface ContactPersistenceService {
+    public AllContactsListEvent requestAllContactItems(RequestAllContactItemsEvent requestAllContactItemsEvent);
 }

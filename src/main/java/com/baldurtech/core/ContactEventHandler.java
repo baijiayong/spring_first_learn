@@ -3,6 +3,7 @@ package com.baldurtech.core;
 import java.util.List;
 
 import com.baldurtech.core.Contact;
+import com.baldurtech.events.AllContactsListEvent;
 import com.baldurtech.events.RequestAllContactItemsEvent;
 import com.baldurtech.persistence.ContactPersistenceService;
 
@@ -15,7 +16,7 @@ public class ContactEventHandler implements ContactService {
     }
 
     @Override
-    public List<Contact> allContactList(RequestAllContactItemsEvent requestAllContactItemsEvent) {
+    public AllContactsListEvent allContactList(RequestAllContactItemsEvent requestAllContactItemsEvent) {
         return contactPersistenceService.requestAllContactItems(requestAllContactItemsEvent);
     }
 }

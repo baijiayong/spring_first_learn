@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.baldurtech.controller.SiteIntegrationTest" time="0.151" tests="1" errors="0" skipped="0" failures="0">
+<testsuite name="com.baldurtech.controller.SiteIntegrationTest" time="0.19" tests="1" errors="0" skipped="0" failures="1">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="f:\jdk1.7\jdk1.7\jre\bin"/>
@@ -61,5 +61,85 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="thatTextReturned" classname="com.baldurtech.controller.SiteIntegrationTest" time="0.151"/>
+  <testcase name="thatTextReturned" classname="com.baldurtech.controller.SiteIntegrationTest" time="0.19">
+    <failure message="Response content expected:&lt;foo!&gt; but was:&lt;&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Response content expected:<foo!> but was:<>
+	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:60)
+	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:89)
+	at org.springframework.test.web.servlet.result.ContentResultMatchers$5.match(ContentResultMatchers.java:144)
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:149)
+	at com.baldurtech.controller.SiteIntegrationTest.thatTextReturned(SiteIntegrationTest.java:41)
+]]></failure>
+    <system-out>15:41:11.436 [main] DEBUG o.s.core.env.StandardEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+15:41:11.436 [main] DEBUG o.s.core.env.StandardEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+15:41:11.436 [main] DEBUG o.s.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+15:41:11.438 [main] INFO  o.s.t.w.s.s.StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping - Mapped "{[/],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.baldurtech.controller.SiteController.getContactList(org.springframework.ui.Model)
+15:41:11.442 [main] DEBUG o.h.v.i.e.r.DefaultTraversableResolver - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+15:41:11.442 [main] DEBUG o.h.v.i.engine.ConfigurationImpl - Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+15:41:11.442 [main] DEBUG o.h.v.i.engine.ConfigurationImpl - Setting custom ParameterNameProvider of type com.sun.proxy.$Proxy9
+15:41:11.443 [main] DEBUG o.h.v.i.xml.ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.
+15:41:11.443 [main] DEBUG o.h.v.i.xml.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only.
+15:41:11.445 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for controller advice: org.springframework.test.web.servlet.setup.StubWebApplicationContext@6c61a903
+15:41:11.447 [main] DEBUG o.s.t.w.s.TestDispatcherServlet - Initializing servlet ''
+15:41:11.448 [main] DEBUG o.s.w.c.s.StandardServletEnvironment - Adding [servletConfigInitParams] PropertySource with lowest search precedence
+15:41:11.448 [main] DEBUG o.s.w.c.s.StandardServletEnvironment - Adding [servletContextInitParams] PropertySource with lowest search precedence
+15:41:11.448 [main] DEBUG o.s.w.c.s.StandardServletEnvironment - Adding [jndiProperties] PropertySource with lowest search precedence
+15:41:11.449 [main] DEBUG o.s.w.c.s.StandardServletEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+15:41:11.449 [main] DEBUG o.s.w.c.s.StandardServletEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+15:41:11.449 [main] DEBUG o.s.w.c.s.StandardServletEnvironment - Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,jndiProperties,systemProperties,systemEnvironment]
+15:41:11.450 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring FrameworkServlet ''
+15:41:11.450 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization started
+15:41:11.452 [main] DEBUG o.s.t.w.s.TestDispatcherServlet - Unable to locate MultipartResolver with name 'multipartResolver': no multipart request handling provided
+15:41:11.452 [main] DEBUG o.s.t.w.s.TestDispatcherServlet - Using LocaleResolver [org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver@34f6515b]
+15:41:11.452 [main] DEBUG o.s.t.w.s.TestDispatcherServlet - Using ThemeResolver [org.springframework.web.servlet.theme.FixedThemeResolver@4b34fff9]
+15:41:11.452 [main] DEBUG o.s.t.w.s.TestDispatcherServlet - Using RequestToViewNameTranslator [org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@1187c9e8]
+15:41:11.452 [main] DEBUG o.s.t.w.s.TestDispatcherServlet - Using FlashMapManager [org.springframework.web.servlet.support.SessionFlashMapManager@127a7a2e]
+15:41:11.452 [main] DEBUG o.s.t.w.s.TestDispatcherServlet - Published WebApplicationContext of servlet '' as ServletContext attribute with name [org.springframework.web.servlet.FrameworkServlet.CONTEXT.]
+15:41:11.453 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization completed in 2 ms
+15:41:11.453 [main] DEBUG o.s.t.w.s.TestDispatcherServlet - Servlet '' configured successfully
+15:41:11.488 [main] DEBUG o.s.t.w.s.TestDispatcherServlet - DispatcherServlet with name '' processing GET request for [/]
+15:41:11.488 [main] DEBUG o.s.t.w.s.s.StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping - Looking up handler method for path /
+15:41:11.489 [main] DEBUG o.s.t.w.s.s.StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping - Returning handler method [public java.lang.String com.baldurtech.controller.SiteController.getContactList(org.springframework.ui.Model)]
+15:41:11.489 [main] DEBUG o.s.t.w.s.TestDispatcherServlet - Last-Modified value for [/] is: -1
+15:41:11.497 [main] DEBUG o.s.t.w.s.TestDispatcherServlet - Rendering view [org.springframework.web.servlet.view.InternalResourceView: unnamed; URL [list]] in DispatcherServlet with name ''
+15:41:11.498 [main] DEBUG o.s.w.s.view.InternalResourceView - Added model object 'contactList' of type [java.util.ArrayList] to request in view with name 'null'
+15:41:11.498 [main] DEBUG o.s.w.s.view.InternalResourceView - Forwarding to resource [list] in InternalResourceView 'null'
+15:41:11.498 [main] DEBUG o.s.mock.web.MockRequestDispatcher - MockRequestDispatcher: forwarding to [list]
+15:41:11.498 [main] DEBUG o.s.t.w.s.TestDispatcherServlet - Successfully completed request
+
+MockHttpServletRequest:
+         HTTP Method = GET
+         Request URI = /
+          Parameters = {}
+             Headers = {}
+
+             Handler:
+                Type = com.baldurtech.controller.SiteController
+              Method = public java.lang.String com.baldurtech.controller.SiteController.getContactList(org.springframework.ui.Model)
+
+               Async:
+   Was async started = false
+        Async result = null
+
+  Resolved Exception:
+                Type = null
+
+        ModelAndView:
+           View name = list
+                View = null
+           Attribute = contactList
+               value = [com.baldurtech.core.Contact@727eb8cb, com.baldurtech.core.Contact@39d9314d]
+
+            FlashMap:
+
+MockHttpServletResponse:
+              Status = 200
+       Error message = null
+             Headers = {}
+        Content type = null
+                Body = 
+       Forwarded URL = list
+      Redirected URL = null
+             Cookies = []
+</system-out>
+  </testcase>
 </testsuite>
