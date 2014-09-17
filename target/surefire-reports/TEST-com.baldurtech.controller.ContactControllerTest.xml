@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.baldurtech.controller.ContactControllerTest" time="6.819" tests="1" errors="1" skipped="0" failures="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="f:\jdk1.7\jdk1.7\jre\bin"/>
+    <property name="java.vm.version" value="25.0-b70"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="CN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="Service Pack 1"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="d:\addressList"/>
+    <property name="java.runtime.version" value="1.8.0-b132"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="f:\jdk1.7\jdk1.7\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\BAIJIN~1\AppData\Local\Temp\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 7"/>
+    <property name="classworlds.conf" value="d:/apache-maven-3.2.3/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="GB18030"/>
+    <property name="java.library.path" value="f:\jdk1.7\jdk1.7\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;c:\Users\baijingyong\bin;.;F:\Git\local\bin;F:\Git\mingw\bin;F:\Git\bin;d:\apache-maven-3.2.3\bin;f:\VIM\Vim\vim74;f:\jdk1.7\jdk1.7\bin;%CATALINA_HOME%\bin\;f:\putty;c:\Program Files\Common Files\Microsoft Shared\Windows Live;c:\Program Files (x86)\Common Files\Microsoft Shared\Windows Live;c:\windows\system32;c:\windows;c:\windows\System32\Wbem;c:\windows\System32\WindowsPowerShell\v1.0\;c:\Program Files\Intel\WiFi\bin\;c:\Program Files\Common Files\Intel\WirelessCommon\;c:\Program Files (x86)\Common Files\Roxio Shared\DLLShared\;c:\Program Files (x86)\Common Files\Roxio Shared\OEM\DLLShared\;c:\Program Files (x86)\Common Files\Roxio Shared\OEM\DLLShared\;c:\Program Files (x86)\Common Files\Roxio Shared\OEM\12.0\DLLShared\;c:\Program Files (x86)\Roxio\OEM\AudioCore\;c:\Program Files (x86)\Windows Live\Shared;c:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;c:\Program Files\Microsoft SQL Server\100\Tools\Binn\;c:\Program Files\Microsoft SQL Server\100\DTS\Binn\;i:\学习资料\数据库系统\MySQL Sever5.1\bin;c:\Progr;m Files (x86)\MySQL\MySQL Server 5.1\bin;."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="6.1"/>
+    <property name="user.home" value="C:\Users\baijingyong"/>
+    <property name="user.timezone" value="Asia/Shanghai"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="GB18030"/>
+    <property name="user.name" value="baijingyong"/>
+    <property name="java.class.path" value="d:/apache-maven-3.2.3/boot/plexus-classworlds-2.5.1.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="f:\jdk1.7\jdk1.7\jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="zh"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0"/>
+    <property name="java.ext.dirs" value="f:\jdk1.7\jdk1.7\jre\lib\ext;C:\windows\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="f:\jdk1.7\jdk1.7\jre\lib\resources.jar;f:\jdk1.7\jdk1.7\jre\lib\rt.jar;f:\jdk1.7\jdk1.7\jre\lib\sunrsasign.jar;f:\jdk1.7\jdk1.7\jre\lib\jsse.jar;f:\jdk1.7\jdk1.7\jre\lib\jce.jar;f:\jdk1.7\jdk1.7\jre\lib\charsets.jar;f:\jdk1.7\jdk1.7\jre\lib\jfr.jar;f:\jdk1.7\jdk1.7\jre\classes"/>
+    <property name="sun.stderr.encoding" value="ms936"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="d:\apache-maven-3.2.3"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.stdout.encoding" value="ms936"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase name="thatViewList" classname="com.baldurtech.controller.ContactControllerTest" time="6.819">
+    <error message="Circular view path [list]: would dispatch back to the current handler URL [/contact/list] again. Check your ViewResolver setup! (Hint: This may be the result of an unspecified view, due to default view name generation.)" type="javax.servlet.ServletException">javax.servlet.ServletException: Circular view path [list]: would dispatch back to the current handler URL [/contact/list] again. Check your ViewResolver setup! (Hint: This may be the result of an unspecified view, due to default view name generation.)
+	at org.springframework.web.servlet.view.InternalResourceView.prepareForRendering(InternalResourceView.java:263)
+	at org.springframework.web.servlet.view.InternalResourceView.renderMergedOutputModel(InternalResourceView.java:186)
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:267)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1221)
+	at org.springframework.test.web.servlet.TestDispatcherServlet.render(TestDispatcherServlet.java:102)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1005)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:952)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:870)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:961)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:852)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:620)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:837)
+	at org.springframework.test.web.servlet.TestDispatcherServlet.service(TestDispatcherServlet.java:62)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.springframework.mock.web.MockFilterChain$ServletFilterProxy.doFilter(MockFilterChain.java:170)
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:137)
+	at org.springframework.test.web.servlet.MockMvc.perform(MockMvc.java:141)
+	at com.baldurtech.controller.ContactControllerTest.thatViewList(ContactControllerTest.java:42)
+</error>
+    <system-out>15:11:42.982 [main] DEBUG o.s.core.env.StandardEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+15:11:43.014 [main] DEBUG o.s.core.env.StandardEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+15:11:43.015 [main] DEBUG o.s.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+15:11:44.151 [main] INFO  o.s.t.w.s.s.StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping - Mapped "{[/contact/list],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.baldurtech.controller.ContactController.getContactList(org.springframework.ui.Model)
+15:11:46.345 [main] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider
+15:11:46.347 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.0.3.Final
+15:11:46.390 [main] DEBUG o.h.v.i.e.r.DefaultTraversableResolver - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+15:11:46.410 [main] DEBUG o.h.v.i.engine.ConfigurationImpl - Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+15:11:46.418 [main] DEBUG o.h.v.i.engine.ConfigurationImpl - Setting custom ParameterNameProvider of type com.sun.proxy.$Proxy10
+15:11:46.504 [main] DEBUG o.h.v.i.xml.ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.
+15:11:46.511 [main] DEBUG o.h.v.i.xml.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only.
+15:11:47.063 [main] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for controller advice: org.springframework.test.web.servlet.setup.StubWebApplicationContext@eb21112
+15:11:47.412 [main] DEBUG o.s.t.w.s.TestDispatcherServlet - Initializing servlet ''
+15:11:47.520 [main] DEBUG o.s.w.c.s.StandardServletEnvironment - Adding [servletConfigInitParams] PropertySource with lowest search precedence
+15:11:47.520 [main] DEBUG o.s.w.c.s.StandardServletEnvironment - Adding [servletContextInitParams] PropertySource with lowest search precedence
+15:11:47.571 [main] DEBUG o.s.w.c.s.StandardServletEnvironment - Adding [jndiProperties] PropertySource with lowest search precedence
+15:11:47.572 [main] DEBUG o.s.w.c.s.StandardServletEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+15:11:47.572 [main] DEBUG o.s.w.c.s.StandardServletEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+15:11:47.572 [main] DEBUG o.s.w.c.s.StandardServletEnvironment - Initialized StandardServletEnvironment with PropertySources [servletConfigInitParams,servletContextInitParams,jndiProperties,systemProperties,systemEnvironment]
+15:11:47.572 [main] INFO  o.s.mock.web.MockServletContext - Initializing Spring FrameworkServlet ''
+15:11:47.572 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization started
+15:11:47.589 [main] DEBUG o.s.t.w.s.TestDispatcherServlet - Unable to locate MultipartResolver with name 'multipartResolver': no multipart request handling provided
+15:11:47.590 [main] DEBUG o.s.t.w.s.TestDispatcherServlet - Using LocaleResolver [org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver@5c86dbc5]
+15:11:47.590 [main] DEBUG o.s.t.w.s.TestDispatcherServlet - Using ThemeResolver [org.springframework.web.servlet.theme.FixedThemeResolver@461ad730]
+15:11:47.590 [main] DEBUG o.s.t.w.s.TestDispatcherServlet - Using RequestToViewNameTranslator [org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@4ee203eb]
+15:11:47.591 [main] DEBUG o.s.t.w.s.TestDispatcherServlet - Using FlashMapManager [org.springframework.web.servlet.support.SessionFlashMapManager@1a5a4e19]
+15:11:47.591 [main] DEBUG o.s.t.w.s.TestDispatcherServlet - Published WebApplicationContext of servlet '' as ServletContext attribute with name [org.springframework.web.servlet.FrameworkServlet.CONTEXT.]
+15:11:47.591 [main] INFO  o.s.t.w.s.TestDispatcherServlet - FrameworkServlet '': initialization completed in 19 ms
+15:11:47.591 [main] DEBUG o.s.t.w.s.TestDispatcherServlet - Servlet '' configured successfully
+15:11:47.877 [main] DEBUG o.s.t.w.s.TestDispatcherServlet - DispatcherServlet with name '' processing GET request for [/contact/list]
+15:11:47.906 [main] DEBUG o.s.t.w.s.s.StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping - Looking up handler method for path /contact/list
+15:11:47.908 [main] DEBUG o.s.t.w.s.s.StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping - Returning handler method [public java.lang.String com.baldurtech.controller.ContactController.getContactList(org.springframework.ui.Model)]
+15:11:47.909 [main] DEBUG o.s.t.w.s.TestDispatcherServlet - Last-Modified value for [/contact/list] is: -1
+15:11:47.972 [main] DEBUG o.s.t.w.s.TestDispatcherServlet - Rendering view [org.springframework.web.servlet.view.InternalResourceView: unnamed; URL [list]] in DispatcherServlet with name ''
+15:11:47.973 [main] DEBUG o.s.w.s.view.InternalResourceView - Added model object 'contactList' of type [java.util.ArrayList] to request in view with name 'null'
+15:11:48.003 [main] DEBUG o.s.t.w.s.TestDispatcherServlet - Error rendering view [org.springframework.web.servlet.view.InternalResourceView: unnamed; URL [list]] in DispatcherServlet with name ''
+javax.servlet.ServletException: Circular view path [list]: would dispatch back to the current handler URL [/contact/list] again. Check your ViewResolver setup! (Hint: This may be the result of an unspecified view, due to default view name generation.)
+	at org.springframework.web.servlet.view.InternalResourceView.prepareForRendering(InternalResourceView.java:263) ~[spring-webmvc-4.0.7.RELEASE.jar:4.0.7.RELEASE]
+	at org.springframework.web.servlet.view.InternalResourceView.renderMergedOutputModel(InternalResourceView.java:186) ~[spring-webmvc-4.0.7.RELEASE.jar:4.0.7.RELEASE]
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:267) ~[spring-webmvc-4.0.7.RELEASE.jar:4.0.7.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1221) [spring-webmvc-4.0.7.RELEASE.jar:4.0.7.RELEASE]
+	at org.springframework.test.web.servlet.TestDispatcherServlet.render(TestDispatcherServlet.java:102) [spring-test-4.0.7.RELEASE.jar:4.0.7.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1005) [spring-webmvc-4.0.7.RELEASE.jar:4.0.7.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:952) [spring-webmvc-4.0.7.RELEASE.jar:4.0.7.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:870) [spring-webmvc-4.0.7.RELEASE.jar:4.0.7.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:961) [spring-webmvc-4.0.7.RELEASE.jar:4.0.7.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:852) [spring-webmvc-4.0.7.RELEASE.jar:4.0.7.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:620) [tomcat-embed-core-7.0.55.jar:7.0.55]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:837) [spring-webmvc-4.0.7.RELEASE.jar:4.0.7.RELEASE]
+	at org.springframework.test.web.servlet.TestDispatcherServlet.service(TestDispatcherServlet.java:62) [spring-test-4.0.7.RELEASE.jar:4.0.7.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727) [tomcat-embed-core-7.0.55.jar:7.0.55]
+	at org.springframework.mock.web.MockFilterChain$ServletFilterProxy.doFilter(MockFilterChain.java:170) [spring-test-4.0.7.RELEASE.jar:4.0.7.RELEASE]
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:137) [spring-test-4.0.7.RELEASE.jar:4.0.7.RELEASE]
+	at org.springframework.test.web.servlet.MockMvc.perform(MockMvc.java:141) [spring-test-4.0.7.RELEASE.jar:4.0.7.RELEASE]
+	at com.baldurtech.controller.ContactControllerTest.thatViewList(ContactControllerTest.java:42) [test-classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0]
+	at java.lang.reflect.Method.invoke(Method.java:483) ~[na:1.8.0]
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47) [junit-4.11.jar:na]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.11.jar:na]
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44) [junit-4.11.jar:na]
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17) [junit-4.11.jar:na]
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26) [junit-4.11.jar:na]
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271) [junit-4.11.jar:na]
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70) [junit-4.11.jar:na]
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50) [junit-4.11.jar:na]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238) [junit-4.11.jar:na]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63) [junit-4.11.jar:na]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236) [junit-4.11.jar:na]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53) [junit-4.11.jar:na]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229) [junit-4.11.jar:na]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309) [junit-4.11.jar:na]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264) [surefire-junit4-2.15.jar:2.15]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153) [surefire-junit4-2.15.jar:2.15]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124) [surefire-junit4-2.15.jar:2.15]
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200) [surefire-booter-2.15.jar:2.15]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153) [surefire-booter-2.15.jar:2.15]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103) [surefire-booter-2.15.jar:2.15]
+15:11:48.004 [main] DEBUG o.s.t.w.s.TestDispatcherServlet - Could not complete request
+javax.servlet.ServletException: Circular view path [list]: would dispatch back to the current handler URL [/contact/list] again. Check your ViewResolver setup! (Hint: This may be the result of an unspecified view, due to default view name generation.)
+	at org.springframework.web.servlet.view.InternalResourceView.prepareForRendering(InternalResourceView.java:263) ~[spring-webmvc-4.0.7.RELEASE.jar:4.0.7.RELEASE]
+	at org.springframework.web.servlet.view.InternalResourceView.renderMergedOutputModel(InternalResourceView.java:186) ~[spring-webmvc-4.0.7.RELEASE.jar:4.0.7.RELEASE]
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:267) ~[spring-webmvc-4.0.7.RELEASE.jar:4.0.7.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1221) ~[spring-webmvc-4.0.7.RELEASE.jar:4.0.7.RELEASE]
+	at org.springframework.test.web.servlet.TestDispatcherServlet.render(TestDispatcherServlet.java:102) [spring-test-4.0.7.RELEASE.jar:4.0.7.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1005) ~[spring-webmvc-4.0.7.RELEASE.jar:4.0.7.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:952) ~[spring-webmvc-4.0.7.RELEASE.jar:4.0.7.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:870) ~[spring-webmvc-4.0.7.RELEASE.jar:4.0.7.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:961) [spring-webmvc-4.0.7.RELEASE.jar:4.0.7.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:852) [spring-webmvc-4.0.7.RELEASE.jar:4.0.7.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:620) [tomcat-embed-core-7.0.55.jar:7.0.55]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:837) [spring-webmvc-4.0.7.RELEASE.jar:4.0.7.RELEASE]
+	at org.springframework.test.web.servlet.TestDispatcherServlet.service(TestDispatcherServlet.java:62) [spring-test-4.0.7.RELEASE.jar:4.0.7.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727) [tomcat-embed-core-7.0.55.jar:7.0.55]
+	at org.springframework.mock.web.MockFilterChain$ServletFilterProxy.doFilter(MockFilterChain.java:170) [spring-test-4.0.7.RELEASE.jar:4.0.7.RELEASE]
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:137) [spring-test-4.0.7.RELEASE.jar:4.0.7.RELEASE]
+	at org.springframework.test.web.servlet.MockMvc.perform(MockMvc.java:141) [spring-test-4.0.7.RELEASE.jar:4.0.7.RELEASE]
+	at com.baldurtech.controller.ContactControllerTest.thatViewList(ContactControllerTest.java:42) [test-classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0]
+	at java.lang.reflect.Method.invoke(Method.java:483) ~[na:1.8.0]
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47) [junit-4.11.jar:na]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.11.jar:na]
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44) [junit-4.11.jar:na]
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17) [junit-4.11.jar:na]
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26) [junit-4.11.jar:na]
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271) [junit-4.11.jar:na]
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70) [junit-4.11.jar:na]
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50) [junit-4.11.jar:na]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238) [junit-4.11.jar:na]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63) [junit-4.11.jar:na]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236) [junit-4.11.jar:na]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53) [junit-4.11.jar:na]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229) [junit-4.11.jar:na]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309) [junit-4.11.jar:na]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264) [surefire-junit4-2.15.jar:2.15]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153) [surefire-junit4-2.15.jar:2.15]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124) [surefire-junit4-2.15.jar:2.15]
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200) [surefire-booter-2.15.jar:2.15]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153) [surefire-booter-2.15.jar:2.15]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103) [surefire-booter-2.15.jar:2.15]
+</system-out>
+  </testcase>
+</testsuite>

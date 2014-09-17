@@ -1,0 +1,25 @@
+-------------------------------------------------------------------------------
+Test set: com.baldurtech.controller.ContactControllerTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 7.021 sec <<< FAILURE! - in com.baldurtech.controller.ContactControllerTest
+thatViewList(com.baldurtech.controller.ContactControllerTest)  Time elapsed: 6.819 sec  <<< ERROR!
+javax.servlet.ServletException: Circular view path [list]: would dispatch back to the current handler URL [/contact/list] again. Check your ViewResolver setup! (Hint: This may be the result of an unspecified view, due to default view name generation.)
+	at org.springframework.web.servlet.view.InternalResourceView.prepareForRendering(InternalResourceView.java:263)
+	at org.springframework.web.servlet.view.InternalResourceView.renderMergedOutputModel(InternalResourceView.java:186)
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:267)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1221)
+	at org.springframework.test.web.servlet.TestDispatcherServlet.render(TestDispatcherServlet.java:102)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1005)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:952)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:870)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:961)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:852)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:620)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:837)
+	at org.springframework.test.web.servlet.TestDispatcherServlet.service(TestDispatcherServlet.java:62)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.springframework.mock.web.MockFilterChain$ServletFilterProxy.doFilter(MockFilterChain.java:170)
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:137)
+	at org.springframework.test.web.servlet.MockMvc.perform(MockMvc.java:141)
+	at com.baldurtech.controller.ContactControllerTest.thatViewList(ContactControllerTest.java:42)
+
