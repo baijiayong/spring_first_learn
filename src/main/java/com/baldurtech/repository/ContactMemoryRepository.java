@@ -27,4 +27,16 @@ public class ContactMemoryRepository implements ContactRepository {
        
         return contacts;
     }
+    
+    @Override
+    public Contact getById(Long id) {
+        Contact contact = new Contact();
+        contact.setId(id);
+        contact.setName("Xu Shuangshuang");
+        contact.setMobile("18766666666");
+        contact.setVpmn("69999");
+        contact.setEmail("Xu@gmail.com");
+        
+        return contact;
+    }
 }

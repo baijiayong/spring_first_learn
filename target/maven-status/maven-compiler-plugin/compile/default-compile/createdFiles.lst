@@ -3,10 +3,12 @@ com\baldurtech\core\ContactService.class
 com\baldurtech\controller\SiteController.class
 com\baldurtech\events\RequestAllContactItemsEvent.class
 com\baldurtech\config\PersistenceConfig.class
+com\baldurtech\events\ContactDetailsEvent.class
 com\baldurtech\controller\ContactController.class
 com\baldurtech\config\CoreConfig.class
 com\baldurtech\core\Contact.class
 com\baldurtech\repository\ContactMemoryRepository.class
+com\baldurtech\events\RequestContactDetailsEvent.class
 com\baldurtech\repository\ContactRepository.class
 com\baldurtech\core\ContactEventHandler.class
 com\baldurtech\events\ReadEvent.class

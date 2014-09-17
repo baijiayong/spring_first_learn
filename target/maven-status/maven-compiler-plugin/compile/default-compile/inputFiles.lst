@@ -1,5 +1,6 @@
 d:\addressList\src\main\java\com\baldurtech\repository\ContactMemoryRepository.java
 d:\addressList\src\main\java\com\baldurtech\config\PersistenceConfig.java
+d:\addressList\src\main\java\com\baldurtech\events\RequestContactDetailsEvent.java
 d:\addressList\src\main\java\com\baldurtech\persistence\ContactPersistenceService.java
 d:\addressList\src\main\java\com\baldurtech\core\Contact.java
 d:\addressList\src\main\java\com\baldurtech\controller\ContactController.java
@@ -11,5 +12,6 @@ d:\addressList\src\main\java\com\baldurtech\controller\SiteController.java
 d:\addressList\src\main\java\com\baldurtech\core\ContactService.java
 d:\addressList\src\main\java\com\baldurtech\persistence\ContactPersistenceEventHandler.java
 d:\addressList\src\main\java\com\baldurtech\config\CoreConfig.java
+d:\addressList\src\main\java\com\baldurtech\events\ContactDetailsEvent.java
 d:\addressList\src\main\java\com\baldurtech\events\AllContactsListEvent.java
 d:\addressList\src\main\java\com\baldurtech\events\RequestAllContactItemsEvent.java

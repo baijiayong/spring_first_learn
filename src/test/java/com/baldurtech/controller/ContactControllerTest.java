@@ -45,4 +45,13 @@ public class ContactControllerTest {
             .andExpect(model().attributeExists("contactList"))
             .andExpect(view().name(is("list")));
     }
+    
+    @Test
+    public void thatViewShow() throws Exception {
+        mockMvc.perform(get("/contact/show"))
+            .andDo(print())
+            .andExpect(status().isOk())
+            .andExpect(model().attributeExists("contact"))
+            .andExpect(view().name(is("show")));
+    }
 }
