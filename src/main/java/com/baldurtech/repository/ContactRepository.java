@@ -6,5 +6,5 @@ import com.baldurtech.core.Contact;
 
 public interface ContactRepository {
     public List<Contact> findAllContact();
-    public Contact getById(Long id);
+    public List<Contact> getById(Long id);
 }

@@ -41,10 +41,16 @@ public class DbManager
         jdbcTemplate.update("INSERT INTO contact(id,name,mobile,email,vpmn,office_address,home_address,memo,job,job_level) values(?,?,?,?,?,?,?,?,?,?)", 5L, "RenJian", "18222222222","shihang@gmail.com","62222","BeiZhang","TaiYuan"," a beautiful girl","HR",1L);
     }
     
-    public List<Contact> executeQuery(JdbcTemplate jdbcTemplate)
-    {
-        String sql = "SELECT * FROM contact";  
+    public List<Contact> executeQuery(JdbcTemplate jdbcTemplate, String sql)
+    { 
         Object[] params = new Object[] {};
+        
+        return jdbcTemplate.query(sql, params, new RowMapperImpl());  
+    }
+    
+    public List<Contact> executeQuery(JdbcTemplate jdbcTemplate, String sql, Long id)
+    { 
+        Object[] params = new Object[] {id};
         
         return jdbcTemplate.query(sql, params, new RowMapperImpl());  
     }

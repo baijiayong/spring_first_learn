@@ -2,14 +2,17 @@ package com.baldurtech.events;
 
 import com.baldurtech.core.Contact;
 
+import java.util.List;
+import java.util.ArrayList;
+
 public class ContactDetailsEvent {
-    Contact contact = new Contact();
+    List<Contact> contacts = new ArrayList<Contact>();
     
-    public ContactDetailsEvent(Contact contact) {
-        this.contact = contact;
+    public ContactDetailsEvent(List<Contact> contacts) {
+        this.contacts = contacts;
     }
     
-    public Contact getContactDetails() {
-        return contact;
+    public List<Contact> getContactDetails() {
+        return contacts;
     }
 }

@@ -10,23 +10,19 @@ import com.baldurtech.core.Contact;
 import org.springframework.jdbc.core.JdbcTemplate;
 
 public class ContactMemoryRepository implements ContactRepository {
- 
+    DbManager dbManager = new DbManager();
+    JdbcTemplate jdbcTemplate = new JdbcTemplate(dbManager.driverManager());
+    String sql;
+    
     @Override
     public List<Contact> findAllContact() {
-       DbManager dbManager = new DbManager();
-       JdbcTemplate jdbcTemplate = new JdbcTemplate(dbManager.driverManager());
-       return dbManager.executeQuery(jdbcTemplate);
+        sql = "SELECT * FROM contact";
+        return dbManager.executeQuery(jdbcTemplate,sql);
     }
      
     @Override
-    public Contact getById(Long id) {
-        Contact contact = new Contact();
-        contact.setId(id);
-        contact.setName("Xu Shuangshuang");
-        contact.setMobile("18766666666");
-        contact.setVpmn("69999");
-        contact.setEmail("Xu@gmail.com");
-        
-        return contact;
+    public List<Contact> getById(Long id) {
+        sql = "SELECT * FROM contact WHERE id=?";
+        return dbManager.executeQuery(jdbcTemplate,sql,id);
     }
 }
