@@ -4,9 +4,11 @@ import com.baldurtech.core.Contact;
 
 import javax.sql.DataSource;
 import java.util.List;
+import java.util.ArrayList;
 
 import org.springframework.jdbc.datasource.SimpleDriverDataSource;
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.dao.DataAccessException;
 
 public class DbManager
 {
@@ -28,7 +30,7 @@ public class DbManager
                     + "id serial, name varchar(255), mobile varchar(255)," 
                     + "email varchar(255),vpmn varchar(255),office_address varchar(255)," 
                     + "home_address varchar(255),memo varchar(255)," 
-                    + "job varchar(255),job_level integer(11))");
+                    + "job varchar(255),job_level integer(200))");
                             
         System.out.println("Inserting contact record!");
         
@@ -43,6 +45,7 @@ public class DbManager
     {
         String sql = "SELECT * FROM contact";  
         Object[] params = new Object[] {};
-        return jdbcTemplate.query(sql, params, new RowMapperImpl());      
+        
+        return jdbcTemplate.query(sql, params, new RowMapperImpl());  
     }
 }
