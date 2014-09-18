@@ -1,10 +1,12 @@
 d:\addressList\src\main\java\com\baldurtech\repository\ContactMemoryRepository.java
+d:\addressList\src\main\java\com\baldurtech\dbManager\DbManager.java
 d:\addressList\src\main\java\com\baldurtech\config\PersistenceConfig.java
 d:\addressList\src\main\java\com\baldurtech\events\RequestContactDetailsEvent.java
 d:\addressList\src\main\java\com\baldurtech\persistence\ContactPersistenceService.java
 d:\addressList\src\main\java\com\baldurtech\core\Contact.java
 d:\addressList\src\main\java\com\baldurtech\controller\ContactController.java
 d:\addressList\src\main\java\com\baldurtech\Application.java
+d:\addressList\src\main\java\com\baldurtech\dbManager\RowMapperImpl.java
 d:\addressList\src\main\java\com\baldurtech\core\ContactEventHandler.java
 d:\addressList\src\main\java\com\baldurtech\repository\ContactRepository.java
 d:\addressList\src\main\java\com\baldurtech\events\ReadEvent.java

@@ -43,7 +43,7 @@ public class ContactControllerTest {
             .andDo(print())
             .andExpect(status().isOk())
             .andExpect(model().attributeExists("contactList"))
-            .andExpect(view().name(is("list")));
+            .andExpect(view().name(is("show")));
     }
     
     @Test
