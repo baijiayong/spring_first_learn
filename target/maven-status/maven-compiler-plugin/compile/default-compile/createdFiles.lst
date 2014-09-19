@@ -15,6 +15,7 @@ com\baldurtech\contact\events\RequestContactDetailsEvent.class
 com\baldurtech\contact\events\ReadEvent.class
 com\baldurtech\department\events\RequestAllDepartmentItemsEvent.class
 com\baldurtech\contact\dbManager\DbManager.class
+com\baldurtech\department\events\RequestDepartmentDetailsEvent.class
 com\baldurtech\contact\core\service\ContactService.class
 com\baldurtech\department\config\DepartmentPersistenceConfig.class
 com\baldurtech\department\events\AllDepartmentItemsEvent.class
@@ -24,6 +25,7 @@ com\baldurtech\contact\config\CoreConfig.class
 com\baldurtech\contact\events\ContactDetailsEvent.class
 com\baldurtech\contact\controller\ContactController.class
 com\baldurtech\department\core\domain\Department.class
+com\baldurtech\department\events\DepartmentDetailsEvent.class
 com\baldurtech\department\core\service\DepartmentEventHandler.class
 com\baldurtech\department\repository\DepartmentMemoryRepository.class
 com\baldurtech\contact\persistence\ContactPersistenceEventHandler.class

@@ -4,6 +4,8 @@ import com.baldurtech.department.core.domain.Department;
 import com.baldurtech.department.repository.DepartmentRepository;
 import com.baldurtech.department.events.RequestAllDepartmentItemsEvent;
 import com.baldurtech.department.events.AllDepartmentItemsEvent;
+import com.baldurtech.department.events.RequestDepartmentDetailsEvent;
+import com.baldurtech.department.events.DepartmentDetailsEvent;
 
 import java.util.List;
 
@@ -13,8 +15,16 @@ public class DepartmentPersistenceEventHandler implements DepartmentPersistenceS
     public DepartmentPersistenceEventHandler(DepartmentRepository departmentRepository) {
         this.departmentRepository = departmentRepository;
     }
+    
+    @Override
     public AllDepartmentItemsEvent requestAllDepartmentItems (RequestAllDepartmentItemsEvent requestAllDepartmentItemsEvent) {
         List<Department> departments = departmentRepository.findAllDepartment();
         return new AllDepartmentItemsEvent(departments);
+    }
+    
+    @Override
+    public DepartmentDetailsEvent requestDepartmentDetails (RequestDepartmentDetailsEvent requestDepartmentDetailsEvent, Long id) {
+        List<Department> departments = departmentRepository.getById(id);
+        return new DepartmentDetailsEvent(departments);
     }
 }

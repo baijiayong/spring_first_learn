@@ -9,6 +9,7 @@ import java.util.ArrayList;
 
 public class DepartmentMemoryRepository implements DepartmentRepository {
     
+    @Override
     public List<Department> findAllDepartment() {
         Department department1 = new Department();
         Department department2 = new Department();
@@ -27,6 +28,21 @@ public class DepartmentMemoryRepository implements DepartmentRepository {
         
         departments.add(department1);
         departments.add(department2);
+        
+        return departments;
+    }
+    
+    @Override
+    public List<Department> getById(Long id) {
+        Department department = new Department();
+        List<Department> departments = new ArrayList<Department>();
+        department.setId(id);
+        department.setName("Human Resource");
+        department.setAddress("TaiYuan");
+        department.setMemo("computer science and technology");
+        department.setParent("Baldurtech");
+        
+        departments.add(department);
         
         return departments;
     }

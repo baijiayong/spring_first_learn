@@ -45,5 +45,14 @@ public class DepartmentControllerTest {
             .andExpect(status().isOk())
             .andExpect(model().attributeExists("departmentList"))
             .andExpect(view().name("departmentList"));
-    }    
+    }   
+
+    @Test 
+    public void thatViewDepartmentShow() throws Exception {
+        mockMvc.perform(get("/department/show"))
+            .andDo(print())
+            .andExpect(status().isOk())
+            .andExpect(model().attributeExists("department"))
+            .andExpect(view().name("department"));
+    }
 }
