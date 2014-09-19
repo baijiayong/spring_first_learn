@@ -6,6 +6,7 @@ import com.baldurtech.department.events.RequestDepartmentDetailsEvent;
 import com.baldurtech.department.events.DepartmentDetailsEvent;
 import com.baldurtech.department.core.service.DepartmentService;
 import com.baldurtech.department.core.service.DepartmentEventHandler;
+import com.baldurtech.department.core.domain.Department;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -29,7 +30,9 @@ public class DepartmentController {
     
     @RequestMapping("/show")
     public String getDepartmentDetails(@RequestParam(value="id", required=false, defaultValue="") String id, Model model) {
-        DepartmentDetailsEvent departmentDetailsEvent = departmentService.getDepartmentDetails(new RequestDepartmentDetailsEvent(), Long.valueOf(id));
+        Department department = new Department();
+        department.setId(Long.valueOf(id));
+        DepartmentDetailsEvent departmentDetailsEvent = departmentService.getDepartmentDetails(new RequestDepartmentDetailsEvent(), department);
         model.addAttribute("department", departmentDetailsEvent.getDepartmentDetails());
         return "departmentShow";
     }

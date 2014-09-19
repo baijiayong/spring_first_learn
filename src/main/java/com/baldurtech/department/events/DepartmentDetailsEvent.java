@@ -2,16 +2,14 @@ package com.baldurtech.department.events;
 
 import com.baldurtech.department.core.domain.Department;
 
-import java.util.List;
-
 public class DepartmentDetailsEvent {
-    List<Department> departments;
+    Department department;
     
-    public DepartmentDetailsEvent(List<Department> departments) {
-        this.departments = departments;
+    public DepartmentDetailsEvent(Department department) {
+        this.department = department;
     }
     
-    public List<Department> getDepartmentDetails() {
-        return departments;
+    public Department getDepartmentDetails() {
+        return department;
     }
 }

@@ -23,8 +23,7 @@ public class DepartmentPersistenceEventHandler implements DepartmentPersistenceS
     }
     
     @Override
-    public DepartmentDetailsEvent requestDepartmentDetails (RequestDepartmentDetailsEvent requestDepartmentDetailsEvent, Long id) {
-        List<Department> departments = departmentRepository.getById(id);
-        return new DepartmentDetailsEvent(departments);
+    public DepartmentDetailsEvent requestDepartmentDetails (RequestDepartmentDetailsEvent requestDepartmentDetailsEvent, Department department) {
+        return new DepartmentDetailsEvent(departmentRepository.getById(department));
     }
 }

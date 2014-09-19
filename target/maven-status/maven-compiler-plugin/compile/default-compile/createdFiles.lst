@@ -8,6 +8,7 @@ com\baldurtech\department\events\ReadEvent.class
 com\baldurtech\department\repository\DepartmentRepository.class
 com\baldurtech\SiteController.class
 com\baldurtech\contact\repository\ContactRepository.class
+com\baldurtech\department\dbManager\DbManager.class
 com\baldurtech\contact\events\RequestAllContactItemsEvent.class
 com\baldurtech\contact\core\service\ContactEventHandler.class
 com\baldurtech\contact\dbManager\RowMapperImpl.class
@@ -28,6 +29,7 @@ com\baldurtech\department\core\domain\Department.class
 com\baldurtech\department\events\DepartmentDetailsEvent.class
 com\baldurtech\department\core\service\DepartmentEventHandler.class
 com\baldurtech\department\repository\DepartmentMemoryRepository.class
+com\baldurtech\department\dbManager\RowMapperImpl.class
 com\baldurtech\contact\persistence\ContactPersistenceEventHandler.class
 com\baldurtech\contact\repository\ContactMemoryRepository.class
 com\baldurtech\Application.class
