@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Serving Web Content</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+  <h1>Department List</h1>
+  <table border="1">
+    <tbody>
+        <tr>
+            <td>Name</td>
+            <td>Address</td>
+            <td>Parent</td>
+            <td>Memo</td>  
+        </tr>
+        <tr th:each="department : ${departmentList}">
+            <td th:text="${department.name}">name</td>
+            <td th:text="${department.Address}">address</td>
+            <td th:text="${department.parent}">parent</td>
+            <td th:text="${department.memo}">memo</td>
+        </tr>
+    </tbody>
+  </table>
+</body>
+</html>
