@@ -46,4 +46,13 @@ public class AdminContactControllerTest {
             .andExpect(model().attributeExists("contactList"))
             .andExpect(view().name(is("adminContactList")));
     }
+    
+    @Test 
+    public void thatViewShow() throws Exception {
+        mockMvc.perform(get("/admin/contact/show"))
+            .andDo(print())
+            .andExpect(status().isOk())
+            .andExpect(model().attributeExists("contact"))
+            .andExpect(view().name(is("adminContactShow")));
+    }
 }
