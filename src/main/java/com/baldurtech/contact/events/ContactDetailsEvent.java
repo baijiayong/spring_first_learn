@@ -6,13 +6,13 @@ import java.util.List;
 import java.util.ArrayList;
 
 public class ContactDetailsEvent {
-    List<Contact> contacts = new ArrayList<Contact>();
+    Contact contact = new Contact();
     
-    public ContactDetailsEvent(List<Contact> contacts) {
-        this.contacts = contacts;
+    public ContactDetailsEvent(Contact contact) {
+        this.contact = contact;
     }
     
-    public List<Contact> getContactDetails() {
-        return contacts;
+    public Contact getContactDetails() {
+        return contact;
     }
 }

@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Serving Web Content</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+  <h1>Contact Show</h1>
+  <table border="1">
+    <tbody>
+        <tr>
+            <td>Name</td>
+            <td>Mobile</td>
+            <td>Vpmn</td>
+            <td>Email</td>
+        </tr>
+        <tr th:each="contact : ${contact}">
+            <td th:text="${contact.name}">name</td>
+            <td th:text="${contact.mobile}">mobile</td>
+            <td th:text="${contact.vpmn}">vpmn</td>
+            <td th:text="${contact.email}">email</td>
+        </tr>
+    </tbody>
+  </table>
+</body>
+</html>

@@ -27,4 +27,14 @@ public class AdminContactMemoryRepository implements AdminContactRepository {
         
         return contacts;
     }
+    
+    @Override
+    public Contact getById(Contact contact) {
+        contact.setName("XuShuang");
+        contact.setMobile("18236666666");
+        contact.setVpmn("66666");
+        contact.setEmail("shuang@gmail.com");
+        
+        return contact;
+    }
 }

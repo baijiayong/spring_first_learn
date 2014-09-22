@@ -22,8 +22,8 @@ public class ContactMemoryRepository implements ContactRepository {
     }
      
     @Override
-    public List<Contact> getById(Long id) {
+    public Contact getById(Contact contact) {
         sql = "SELECT * FROM contact WHERE id=?";
-        return dbManager.executeQueryById(jdbcTemplate,sql,id);
+        return dbManager.executeQueryById(jdbcTemplate,sql,contact);
     }
 }

@@ -23,8 +23,7 @@ public class ContactPersistenceEventHandler implements ContactPersistenceService
     }
     
     @Override
-    public ContactDetailsEvent requestContactDetails(RequestContactDetailsEvent requestContactDetailsEvent, Long id) {
-        List<Contact> contacts = contactRepository.getById(id);
-        return new ContactDetailsEvent(contacts);
+    public ContactDetailsEvent requestContactDetails(RequestContactDetailsEvent requestContactDetailsEvent, Contact contact) {
+        return new ContactDetailsEvent(contactRepository.getById(contact));
     }
 }

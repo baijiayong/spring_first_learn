@@ -48,10 +48,15 @@ public class DbManager
         return jdbcTemplate.query(sql, params, new RowMapperImpl());  
     }
     
-    public List<Contact> executeQueryById(JdbcTemplate jdbcTemplate, String sql, Long id)
+    public Contact executeQueryById(JdbcTemplate jdbcTemplate, String sql, Contact contact)
     { 
-        Object[] params = new Object[] {id};
+        Object[] params = new Object[] {contact.getId()};
         
-        return jdbcTemplate.query(sql, params, new RowMapperImpl());  
+        List<Contact> result=  jdbcTemplate.query(sql, params, new RowMapperImpl());  
+        
+        if(result.isEmpty()) {
+            return null;
+        }
+        return result.get(0);
     }
 }

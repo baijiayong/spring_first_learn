@@ -10,5 +10,5 @@ import com.baldurtech.contact.events.AllContactsListEvent;
 
 public interface ContactPersistenceService {
     public AllContactsListEvent requestAllContactItems(RequestAllContactItemsEvent requestAllContactItemsEvent);
-    public ContactDetailsEvent requestContactDetails(RequestContactDetailsEvent requestContactDetailsEvent, Long id);
+    public ContactDetailsEvent requestContactDetails(RequestContactDetailsEvent requestContactDetailsEvent, Contact contact);
 }

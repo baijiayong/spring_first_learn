@@ -23,7 +23,7 @@ public class ContactEventHandler implements ContactService {
     }
     
     @Override
-    public ContactDetailsEvent getContact(RequestContactDetailsEvent requestContactDetailsEvent, Long id) {
-        return contactPersistenceService.requestContactDetails(requestContactDetailsEvent, id);
+    public ContactDetailsEvent getContact(RequestContactDetailsEvent requestContactDetailsEvent, Contact contact) {
+        return contactPersistenceService.requestContactDetails(requestContactDetailsEvent, contact);
     }
 }

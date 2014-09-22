@@ -30,7 +30,9 @@ public class ContactController {
     
     @RequestMapping(value="/show", method=RequestMethod.GET)
     public String getContactShow(@RequestParam(value="id", required=false, defaultValue="") String id, Model model) {
-        ContactDetailsEvent contactDetail = contactService.getContact(new RequestContactDetailsEvent(), Long.valueOf(id));
+        Contact contact = new Contact();
+        contact.setId(Long.valueOf(id));
+        ContactDetailsEvent contactDetail = contactService.getContact(new RequestContactDetailsEvent(), contact);
         model.addAttribute("contact", contactDetail.getContactDetails());
         return "show";
     }

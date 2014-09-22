@@ -23,8 +23,19 @@ public class AdminContactController {
     
     @RequestMapping(value="/list", method=RequestMethod.GET)
     public String getContactList(Model model) {
-        AllContactsListEvent ContactsList = adminContactService.allContactsList(new RequestAllContactItemsEvent());
-        model.addAttribute("contactList", ContactsList.getContactList());
-        return "list";
+        AllContactsListEvent contactsList = adminContactService.allContactsList(new RequestAllContactItemsEvent());
+        model.addAttribute("contactList", contactsList.getContactList());
+        return "adminContactList";
+    }
+    
+    @RequestMapping(value="/show", method=RequestMethod.GET)
+    public String getContactShow(@RequestParam(value="id", required=false, defaultValue="") String id, Model model) {
+        Contact contact = new Contact();
+        contact.setId(Long.valueOf(id));
+        
+        ContactDetailsEvent contactDetails = adminContactService.contactDetails(new RequestContactDetailsEvent(), contact);
+        model.addAttribute("contact", contactDetails.getContactDetails());
+        
+        return "adminContactShow";
     }
 }
