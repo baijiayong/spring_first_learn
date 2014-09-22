@@ -21,6 +21,8 @@ import org.springframework.test.web.servlet.MockMvc;
 import com.baldurtech.WebDataFixture;
 import com.baldurtech.admin.contact.core.service.AdminContactService;
 import com.baldurtech.contact.events.RequestAllContactItemsEvent;
+import com.baldurtech.contact.events.RequestContactDetailsEvent;
+import com.baldurtech.contact.core.domain.Contact;
 
 public class AdminContactControllerTest {
     MockMvc mockMvc;
@@ -31,11 +33,17 @@ public class AdminContactControllerTest {
     @Mock
     AdminContactService adminContactService;
     
+    Contact contact = new Contact();
+    
     @Before
     public void setup() {
+        
+        contact.setId(1L);
+        
         MockitoAnnotations.initMocks(this);
         mockMvc = standaloneSetup(controller).build();
-        when(adminContactService.allContactsList(any(RequestAllContactItemsEvent.class))).thenReturn(WebDataFixture.allContactList());     
+        when(adminContactService.allContactsList(any(RequestAllContactItemsEvent.class))).thenReturn(WebDataFixture.allContactList()); 
+        when(adminContactService.contactDetails(any(RequestContactDetailsEvent.class), any(Contact.class))).thenReturn(WebDataFixture.contactDetails(contact));
     }
     
     @Test
@@ -49,10 +57,12 @@ public class AdminContactControllerTest {
     
     @Test 
     public void thatViewShow() throws Exception {
-        mockMvc.perform(get("/admin/contact/show"))
+        mockMvc.perform(get("/admin/contact/show").param("id",String.valueOf(contact.getId())))
             .andDo(print())
             .andExpect(status().isOk())
             .andExpect(model().attributeExists("contact"))
             .andExpect(view().name(is("adminContactShow")));
     }
+    
+   
 }

@@ -3,6 +3,8 @@ package com.baldurtech;
 import com.baldurtech.contact.core.domain.Contact;
 import com.baldurtech.contact.events.AllContactsListEvent;
 import com.baldurtech.contact.events.RequestAllContactItemsEvent;
+import com.baldurtech.contact.events.ContactDetailsEvent;
+import com.baldurtech.contact.events.RequestContactDetailsEvent;
 
 import java.util.List;
 import java.util.ArrayList;
@@ -26,5 +28,14 @@ public class WebDataFixture {
         contacts.add(contact2);
         
         return new AllContactsListEvent(contacts);
+    }
+    
+    public static ContactDetailsEvent contactDetails(Contact contact) {
+        contact.setName("Xiaobai");
+        contact.setMobile("18234444444");
+        contact.setVpmn("64444");
+        contact.setEmail("xiaobai@gmail.com");
+       
+        return new ContactDetailsEvent(contact);
     }
 }
