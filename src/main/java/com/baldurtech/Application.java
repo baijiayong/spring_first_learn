@@ -1,6 +1,7 @@
 package com.baldurtech;
 
 import com.baldurtech.contact.controller.ContactController;
+import com.baldurtech.admin.contact.controller.AdminContactController;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.*;

@@ -8,11 +8,10 @@ import java.util.List;
 import org.springframework.jdbc.datasource.SimpleDriverDataSource;
 import org.springframework.jdbc.core.JdbcTemplate;
 
-public class DbManager
-{
+public class DbManager {
     JdbcTemplate jdbcTemplate = new JdbcTemplate(driverManager());
-    public DataSource driverManager()
-    {
+    
+    public DataSource driverManager() {
 
         SimpleDriverDataSource dataSource = new SimpleDriverDataSource();
         dataSource.setDriverClass(com.mysql.jdbc.Driver.class);
@@ -22,23 +21,19 @@ public class DbManager
         return dataSource;
     }
     
-    public List<Department> executeQuery()
-    {
+    public List<Department> executeQuery() {
         String sql = "SELECT * FROM department";  
         Object[] params = new Object[] {};
         return jdbcTemplate.query(sql, params, new RowMapperImpl());      
     }
     
-    public Department executeQueryById(Department department)
-    {
+    public Department executeQueryById(Department department) {
         String sql = "SELECT * FROM department WHERE id=?";
         Object[] params = new Object[] {department.getId()};       
         List<Department> result = jdbcTemplate.query(sql, params, new RowMapperImpl());
-        if(result.isEmpty())
-        {
+        if(result.isEmpty()) {
             return null;
         }
         return result.get(0);
     }
-    
 }
