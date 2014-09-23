@@ -25,7 +25,7 @@ public class ContactController {
     public String getContactList(Model model) {
         AllContactsListEvent allContactList = contactService.allContactList(new RequestAllContactItemsEvent());
         model.addAttribute("contactList", allContactList.getContactList());
-        return "list";
+        return "contactList";
     }
     
     @RequestMapping(value="/show", method=RequestMethod.GET)
@@ -34,6 +34,6 @@ public class ContactController {
         contact.setId(Long.valueOf(id));
         ContactDetailsEvent contactDetail = contactService.getContact(new RequestContactDetailsEvent(), contact);
         model.addAttribute("contact", contactDetail.getContactDetails());
-        return "show";
+        return "contactShow";
     }
 }

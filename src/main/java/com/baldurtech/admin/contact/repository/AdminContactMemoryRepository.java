@@ -37,4 +37,9 @@ public class AdminContactMemoryRepository implements AdminContactRepository {
         
         return contact;
     }
+    
+    @Override
+    public Contact create(Contact contact) {
+        return contact;
+    }
 }

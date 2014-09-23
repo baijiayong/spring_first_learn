@@ -98,7 +98,5 @@ public class Contact
     {
         return this.jobLevel;
     }
-   
-
 }
 

@@ -23,6 +23,7 @@ d:\addressList\src\main\java\com\baldurtech\contact\events\AllContactsListEvent.
 d:\addressList\src\main\java\com\baldurtech\admin\contact\persistence\AdminContactPersistenceEventHandler.java
 d:\addressList\src\main\java\com\baldurtech\department\events\RequestAllDepartmentItemsEvent.java
 d:\addressList\src\main\java\com\baldurtech\admin\contact\repository\AdminContactRepository.java
+d:\addressList\src\main\java\com\baldurtech\contact\events\CreateContactDetailsEvent.java
 d:\addressList\src\main\java\com\baldurtech\department\events\AllDepartmentItemsEvent.java
 d:\addressList\src\main\java\com\baldurtech\department\config\DepartmentPersistenceConfig.java
 d:\addressList\src\main\java\com\baldurtech\admin\contact\config\AdminContactCoreConfig.java

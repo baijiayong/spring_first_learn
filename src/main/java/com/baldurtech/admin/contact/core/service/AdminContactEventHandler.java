@@ -4,8 +4,10 @@ import com.baldurtech.contact.events.RequestAllContactItemsEvent;
 import com.baldurtech.contact.events.AllContactsListEvent;
 import com.baldurtech.contact.events.RequestContactDetailsEvent;
 import com.baldurtech.contact.events.ContactDetailsEvent;
+import com.baldurtech.contact.events.CreateContactDetailsEvent;
 import com.baldurtech.admin.contact.persistence.AdminContactPersistenceService;
 import com.baldurtech.contact.core.domain.Contact;
+import com.baldurtech.contact.events.CreateContactDetailsEvent;
 
 public class AdminContactEventHandler implements AdminContactService {
     AdminContactPersistenceService adminContactPersistenceService;
@@ -22,5 +24,10 @@ public class AdminContactEventHandler implements AdminContactService {
     @Override
     public ContactDetailsEvent contactDetails(RequestContactDetailsEvent requestContactDetailsEvent, Contact contact) {
         return adminContactPersistenceService.requestContactDetails(requestContactDetailsEvent, contact);
+    }
+    
+    @Override
+    public CreateContactDetailsEvent createContact(CreateContactDetailsEvent createContactDetailsEvent) {
+        return adminContactPersistenceService.createContact(createContactDetailsEvent);
     }
 }

@@ -23,6 +23,7 @@ com\baldurtech\admin\contact\core\service\AdminContactService.class
 com\baldurtech\department\dbManager\DbManager.class
 com\baldurtech\contact\events\RequestAllContactItemsEvent.class
 com\baldurtech\admin\contact\repository\AdminContactRepository.class
+com\baldurtech\contact\events\CreateContactDetailsEvent.class
 com\baldurtech\admin\contact\persistence\AdminContactPersistenceService.class
 com\baldurtech\contact\events\RequestContactDetailsEvent.class
 com\baldurtech\admin\contact\config\AdminContactCoreConfig.class
