@@ -8,6 +8,7 @@ d:\addressList\src\main\java\com\baldurtech\admin\contact\core\service\AdminCont
 d:\addressList\src\main\java\com\baldurtech\contact\config\PersistenceConfig.java
 d:\addressList\src\main\java\com\baldurtech\contact\events\RequestAllContactItemsEvent.java
 d:\addressList\src\main\java\com\baldurtech\contact\core\service\ContactEventHandler.java
+d:\addressList\src\main\java\com\baldurtech\contact\events\DeletedContactEvent.java
 d:\addressList\src\main\java\com\baldurtech\department\events\RequestDepartmentDetailsEvent.java
 d:\addressList\src\main\java\com\baldurtech\contact\core\domain\Contact.java
 d:\addressList\src\main\java\com\baldurtech\contact\persistence\ContactPersistenceEventHandler.java
@@ -36,6 +37,7 @@ d:\addressList\src\main\java\com\baldurtech\admin\contact\core\service\AdminCont
 d:\addressList\src\main\java\com\baldurtech\admin\contact\persistence\AdminContactPersistenceService.java
 d:\addressList\src\main\java\com\baldurtech\contact\controller\ContactController.java
 d:\addressList\src\main\java\com\baldurtech\department\repository\DepartmentMemoryRepository.java
+d:\addressList\src\main\java\com\baldurtech\contact\events\DeleteContactEvent.java
 d:\addressList\src\main\java\com\baldurtech\department\config\DepartmentCoreConfig.java
 d:\addressList\src\main\java\com\baldurtech\department\controller\DepartmentController.java
 d:\addressList\src\main\java\com\baldurtech\department\core\service\DepartmentEventHandler.java

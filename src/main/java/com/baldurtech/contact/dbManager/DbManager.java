@@ -59,4 +59,25 @@ public class DbManager
         }
         return result.get(0);
     }
+    
+      public Contact insert(JdbcTemplate jdbcTemplate, String sql, Contact contact)
+    {
+        Object[] params = new Object[] {contact.getName(), contact.getMobile(), contact.getEmail(), contact.getVpmn(), contact.getOfficeAddress(), contact.getHomeAddress(), contact.getMemo(), contact.getJob(), contact.getJobLevel()};
+        jdbcTemplate.update(sql, params);
+        return contact;
+    }
+    
+    public Contact update(JdbcTemplate jdbcTemplate, String sql, Contact updateContact, Contact contact)
+    {
+        Object[] params = new Object[] {updateContact.getName(), updateContact.getMobile(), updateContact.getEmail(), updateContact.getVpmn(), updateContact.getOfficeAddress(), updateContact.getHomeAddress(), updateContact.getMemo(), updateContact.getJob(), updateContact.getJobLevel(), contact.getId()};
+        jdbcTemplate.update(sql, params);
+        return updateContact;
+    }
+    
+    public Contact delete(JdbcTemplate jdbcTemplate, String sql, Contact contact)
+    {
+        Object[] params = new Object[] {contact.getId()};
+        jdbcTemplate.update(sql, params);
+        return contact;
+    }
 }

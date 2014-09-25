@@ -4,6 +4,7 @@ import com.baldurtech.contact.events.RequestContactDetailsEvent;
 import com.baldurtech.contact.events.RequestAllContactItemsEvent;
 import com.baldurtech.contact.events.AllContactsListEvent;
 import com.baldurtech.contact.events.ContactDetailsEvent;
+import com.baldurtech.contact.events.DeleteContactEvent;
 import com.baldurtech.admin.contact.core.service.AdminContactService;
 import com.baldurtech.contact.core.domain.Contact;
 import com.baldurtech.contact.events.CreateContactDetailsEvent;
@@ -70,6 +71,42 @@ public class AdminContactController {
         
         adminContactService.createContact(new CreateContactDetailsEvent(contact));
         
-        return "redirect:adminContactList";
+        return "redirect:list";
+    }
+    
+    @RequestMapping(value="/show",method=RequestMethod.POST)
+    public String deleteContact(@RequestParam(value="id", required=false, defaultValue="") String id
+        ,@RequestParam(value="action", required=false, defaultValue="") String action
+        ,@RequestParam(value="name", required=false, defaultValue="") String name
+        ,@RequestParam(value="mobile", required=false, defaultValue="") String mobile
+        ,@RequestParam(value="vpmn", required=false, defaultValue="") String vpmn
+        ,@RequestParam(value="email", required=false, defaultValue="") String email
+        ,@RequestParam(value="homeAddress", required=false, defaultValue="") String homeAddress
+        ,@RequestParam(value="officeAddress", required=false, defaultValue="") String officeAddress
+        ,@RequestParam(value="job", required=false, defaultValue="") String job
+        ,@RequestParam(value="jobLevel", required=false, defaultValue="") String jobLevel
+        ,@RequestParam(value="memo", required=false, defaultValue="") String memo) {
+        
+        Contact contact = new Contact();
+        contact.setId(Long.valueOf(id));
+        
+        Contact updateContact  = new Contact();
+        updateContact.setName(name);
+        updateContact.setMobile(mobile);
+        updateContact.setVpmn(vpmn);
+        updateContact.setEmail(email);
+        updateContact.setHomeAddress(homeAddress);
+        updateContact.setOfficeAddress(officeAddress);
+        updateContact.setJob(job);
+        updateContact.setJobLevel(Long.valueOf(jobLevel));
+        updateContact.setMemo(memo);
+        
+        if(action.equals("delete")) {
+            adminContactService.deleteContact(new DeleteContactEvent(), contact);
+        }else if(action.equals("update")) {
+            adminContactService.updateContact(new CreateContactDetailsEvent(updateContact), contact);
+        }
+        
+        return "redirect:list";
     }
 }

@@ -10,6 +10,7 @@ com\baldurtech\contact\dbManager\DbManager.class
 com\baldurtech\department\events\RequestDepartmentDetailsEvent.class
 com\baldurtech\admin\contact\core\service\AdminContactEventHandler.class
 com\baldurtech\department\persistence\DepartmentPersistenceService.class
+com\baldurtech\contact\events\DeleteContactEvent.class
 com\baldurtech\admin\contact\controller\AdminContactController.class
 com\baldurtech\contact\controller\ContactController.class
 com\baldurtech\department\core\domain\Department.class
@@ -36,6 +37,7 @@ com\baldurtech\contact\core\domain\Contact.class
 com\baldurtech\admin\contact\config\AdminContactPersistenceConfig.class
 com\baldurtech\contact\config\CoreConfig.class
 com\baldurtech\contact\events\ContactDetailsEvent.class
+com\baldurtech\contact\events\DeletedContactEvent.class
 com\baldurtech\admin\contact\persistence\AdminContactPersistenceEventHandler.class
 com\baldurtech\department\events\DepartmentDetailsEvent.class
 com\baldurtech\department\core\service\DepartmentEventHandler.class

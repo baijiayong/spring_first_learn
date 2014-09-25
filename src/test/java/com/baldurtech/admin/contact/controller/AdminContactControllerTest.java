@@ -26,6 +26,8 @@ import com.baldurtech.admin.contact.core.service.AdminContactService;
 import com.baldurtech.contact.events.RequestAllContactItemsEvent;
 import com.baldurtech.contact.events.RequestContactDetailsEvent;
 import com.baldurtech.contact.events.CreateContactDetailsEvent;
+import com.baldurtech.contact.events.DeleteContactEvent;
+import com.baldurtech.contact.events.DeletedContactEvent;
 import com.baldurtech.contact.core.domain.Contact;
 
 public class AdminContactControllerTest {
@@ -101,5 +103,16 @@ public class AdminContactControllerTest {
             .andDo(print());
            
         verify(adminContactService).createContact(any(CreateContactDetailsEvent.class));
+    }
+    
+    @Test
+    public void thatDeleteWillRedirectedToList() throws Exception {
+        mockMvc.perform(post("/admin/contact/show")
+            .param("id", String.valueOf(contact.getId()))
+            .param("action", String.valueOf("Delete")))
+            .andDo(print())
+            .andExpect(redirectedUrl("list"));
+           
+        verify(adminContactService).deleteContact(any(DeleteContactEvent.class), contact);
     }
 }   

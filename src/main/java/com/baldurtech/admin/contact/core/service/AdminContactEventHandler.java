@@ -8,6 +8,8 @@ import com.baldurtech.contact.events.CreateContactDetailsEvent;
 import com.baldurtech.admin.contact.persistence.AdminContactPersistenceService;
 import com.baldurtech.contact.core.domain.Contact;
 import com.baldurtech.contact.events.CreateContactDetailsEvent;
+import com.baldurtech.contact.events.DeleteContactEvent;
+import com.baldurtech.contact.events.DeletedContactEvent;
 
 public class AdminContactEventHandler implements AdminContactService {
     AdminContactPersistenceService adminContactPersistenceService;
@@ -29,5 +31,15 @@ public class AdminContactEventHandler implements AdminContactService {
     @Override
     public CreateContactDetailsEvent createContact(CreateContactDetailsEvent createContactDetailsEvent) {
         return adminContactPersistenceService.createContact(createContactDetailsEvent);
+    }
+    
+    @Override
+    public DeletedContactEvent deleteContact(DeleteContactEvent deleteContactEvent, Contact contact) {
+        return adminContactPersistenceService.deleteContact(deleteContactEvent, contact);
+    }
+    
+    @Override
+    public CreateContactDetailsEvent updateContact(CreateContactDetailsEvent createContactDetailsEvent, Contact contact) {
+        return adminContactPersistenceService.updateContact(createContactDetailsEvent, contact);
     }
 }

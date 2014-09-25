@@ -1,45 +1,46 @@
 package com.baldurtech.admin.contact.repository;
 
+import com.baldurtech.contact.dbManager.DbManager;
+import com.baldurtech.contact.dbManager.RowMapperImpl;
 import com.baldurtech.contact.core.domain.Contact;
+
+import org.springframework.jdbc.core.JdbcTemplate;
 
 import java.util.List;
 import java.util.ArrayList;
 
 public class AdminContactMemoryRepository implements AdminContactRepository {
-
+    DbManager dbManager = new DbManager();
+    JdbcTemplate jdbcTemplate = new JdbcTemplate(dbManager.driverManager());
+    String sql;
+    
     @Override
     public List<Contact> findAllContacts() {
-        List<Contact> contacts = new ArrayList<Contact>();
-        
-        Contact contact1 = new Contact();
-        contact1.setName("Xiaobai");
-        contact1.setMobile("18233333333");
-        contact1.setVpmn("65555");
-        contact1.setEmail("xiaobai@gmail.com");
-        Contact contact2 = new Contact();
-        contact2.setName("Zhang Mutou");
-        contact2.setMobile("18244444444");
-        contact2.setVpmn("63333");
-        contact2.setEmail("mutou@gmail.com");
-        
-        contacts.add(contact1);
-        contacts.add(contact2);
-        
-        return contacts;
+        sql = "SELECT * FROM contact";
+        return dbManager.executeQuery(jdbcTemplate,sql);
     }
     
     @Override
     public Contact getById(Contact contact) {
-        contact.setName("XuShuang");
-        contact.setMobile("18236666666");
-        contact.setVpmn("66666");
-        contact.setEmail("shuang@gmail.com");
-        
-        return contact;
+        sql = "SELECT * FROM contact WHERE id=?";
+        return dbManager.executeQueryById(jdbcTemplate,sql,contact);
     }
     
     @Override
     public Contact create(Contact contact) {
-        return contact;
+        sql = "INSERT INTO contact(name, mobile, email, vpmn, office_address, home_address, memo, job, job_level) values(?,?,?,?,?,?,?,?,?)";
+        return dbManager.insert(jdbcTemplate,sql,contact);
+    }
+    
+    @Override
+    public Contact delete(Contact contact) {
+        sql = "DELETE FROM contact WHERE id=?";
+        return dbManager.delete(jdbcTemplate, sql, contact);
+    }
+    
+    @Override
+    public Contact update(Contact updateContact, Contact contact) {
+        sql = "UPDATE contact SET name=?, mobile=?, email=?, vpmn=?, office_address=?, home_address=?, memo=?, job=?, job_level=? WHERE id=?";
+        return dbManager.update(jdbcTemplate,sql,updateContact,contact);
     }
 }
